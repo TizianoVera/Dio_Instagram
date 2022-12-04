@@ -121,13 +121,13 @@ body {
 .app-download {
   height: 3rem;
   width: 10rem;
-  background-size: hidden;
+  background-size:cover;
 }
 
 .app-download:nth-child(1) {
-  background-image: url("./src/instagram/apple.png");
+  background-image: url("../src/instagram/apple.png");
 }
 
 .app-download:nth-child(2) {
-  background-image: url("./src/instagram/android.png");
+  background-image: url("../src/instagram/android.png");
 }

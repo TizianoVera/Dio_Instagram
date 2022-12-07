@@ -4,6 +4,7 @@
   text-decoration: none;
   font-family: sans-serif;
   font-size: 14px;
+  box-sizing:border-box;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  font-weight: 500;
+  /*font-weight: 500;*/
 }
 
 .instagram-wrapper {
@@ -54,6 +55,7 @@ body {
   width: 100%;
   padding: 1.3rem 0;
   border: 1px solid lightgray;
+  margin: 5px;
 }
 
 .group:nth-child(1) {
@@ -77,15 +79,10 @@ body {
 }
 
 .instagram-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #0095f6;
   padding: 8px;
   color: #fff;
   border-radius: 4px;
-  font-weight: 600;
-  text-transform: inherit;
 }
 
 .instagram-logout {
@@ -130,4 +127,33 @@ body {
 
 .app-download:nth-child(2) {
   background-image: url("../src/instagram/android.png");
+}
+
+/* media querie*/
+@media (max-width: 1024px){
+  .instagram-wraper{
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px){
+  body{
+    background: #fff;
+  }
+
+  .instagram-wraper{
+    width: 90%;
+  }
+
+  .instagram-phone{
+    display: none;
+  }
+
+  .instagram-continue{
+    width: 100%;
+  }
+
+  .group{
+    border: 1px solid transparent;
+  }
 }
